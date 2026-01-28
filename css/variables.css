@@ -1,0 +1,25 @@
+:root {
+    /* Color Palette - Premium & Modern */
+    --primary-color: #3b82f6; /* Modern Blue */
+    --secondary-color: #1e3a8a; /* Dark Blue */
+    --accent-color: #f59e0b; /* Amber */
+    --background-color: #0f172a; /* Dark Slate (Dark Mode base) */
+    --surface-color: #1e293b; /* Slightly lighter slate for cards */
+    --text-color: #f8fafc; /* Off-white for readability */
+    --text-secondary: #94a3b8; /* Muted text */
+
+    /* Typography */
+    --font-main: 'Inter', sans-serif;
+    --font-heading: 'Outfit', sans-serif;
+
+    /* Spacing */
+    --spacing-xs: 0.5rem;
+    --spacing-sm: 1rem;
+    --spacing-md: 2rem;
+    --spacing-lg: 4rem;
+    --spacing-xl: 8rem;
+
+    /* Transitions */
+    --transition-fast: 0.2s ease;
+    --transition-base: 0.3s ease-in-out;
+}
