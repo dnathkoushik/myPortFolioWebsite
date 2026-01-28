@@ -47,6 +47,10 @@ a {
     padding: var(--spacing-xl) 0;
 }
 
+.spacer-lg {
+    height: var(--spacing-xl);
+}
+
 /* Navbar */
 .navbar {
     position: fixed;
@@ -177,14 +181,20 @@ a {
 
 .btn-secondary:hover {
     background: var(--surface-hover);
+    border-color: var(--primary-color);
 }
 
-/* Bento Grid */
-.info-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: var(--spacing-sm);
-    margin-bottom: var(--spacing-xl);
+/* Sections Common */
+.section-title {
+    font-size: 2.5rem;
+    margin-bottom: var(--spacing-sm);
+}
+
+.section-subtitle {
+    color: var(--secondary-color);
+    margin-bottom: var(--spacing-lg);
+    font-size: 1.1rem;
+    max-width: 600px;
 }
 
 .card {
@@ -192,86 +202,147 @@ a {
     border: 1px solid var(--border-color);
     border-radius: var(--radius-md);
     padding: var(--spacing-md);
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, border-color 0.3s ease;
 }
 
 .card:hover {
     border-color: var(--secondary-color);
 }
 
-.card h3 {
-    font-size: 1.25rem;
-    margin-bottom: var(--spacing-sm);
-    color: var(--secondary-color);
+/* Education Section */
+.education-detail-card {
+    padding: var(--spacing-lg);
+    border-radius: var(--radius-lg);
 }
 
-.card p {
-    color: var(--primary-color);
+.edu-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: var(--spacing-md);
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.edu-info h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.25rem;
+}
+
+.edu-info .degree {
+    color: var(--secondary-color);
     font-size: 1.1rem;
+}
+
+.edu-year {
+    font-weight: 500;
+    color: var(--accent-color);
+    background: rgba(255, 255, 255, 0.05);
+    padding: 0.25rem 0.75rem;
+    border-radius: 99px;
+    font-size: 0.9rem;
+}
+
+.edu-desc p {
+    color: var(--secondary-color);
+    line-height: 1.7;
+}
+
+/* Coding Section */
+.coding-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--spacing-md);
+}
+
+.coding-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 220px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.coding-card:hover {
+    transform: translateY(-4px);
+}
+
+.coding-icon {
+    font-size: 2rem;
+    font-weight: 800;
+    margin-bottom: var(--spacing-md);
+}
+
+.lc-logo {
+    color: #ffa116;
+    /* LeetCode Orange */
+}
+
+.cf-logo {
+    color: #3182ce;
+    /* Codeforces Blue-ish placeholder */
+}
+
+.coding-stats h3 {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+}
+
+.coding-stats p {
+    color: var(--secondary-color);
+    font-size: 0.95rem;
+    margin-bottom: 1rem;
+}
+
+.link-arrow {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--primary-color);
+}
+
+/* Skills & Projects */
+.skills-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: var(--spacing-md);
+    margin-bottom: var(--spacing-xl);
+}
+
+.skill-category h4 {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    color: var(--accent-color);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
 }
 
 .tags {
     display: flex;
     gap: 0.5rem;
-    margin-top: 1rem;
     flex-wrap: wrap;
 }
 
 .tags span {
     font-size: 0.85rem;
-    padding: 0.25rem 0.75rem;
-    background: #000;
+    padding: 0.35rem 0.85rem;
+    background: var(--surface-hover);
+    border: 1px solid var(--border-color);
     border-radius: 6px;
     color: var(--secondary-color);
+    transition: 0.2s;
 }
 
-.edu-item h4 {
-    font-size: 1.1rem;
+.tags span:hover {
     color: var(--primary-color);
+    border-color: var(--secondary-color);
 }
 
-.edu-item .year {
-    display: block;
-    margin-top: 0.5rem;
-    font-size: 0.9rem;
-    color: var(--secondary-color);
-}
-
-.status-indicator {
-    display: flex;
-    align-items: center;
-    gap: 0.75rem;
-    margin-top: 1rem;
-    font-weight: 500;
-}
-
-.dot {
-    width: 10px;
-    height: 10px;
-    background: #22c55e;
-    border-radius: 50%;
-    box-shadow: 0 0 12px rgba(34, 197, 94, 0.4);
-    animation: pulse 2s infinite;
-}
-
-@keyframes pulse {
-    0% {
-        opacity: 1;
-    }
-
-    50% {
-        opacity: 0.5;
-    }
-
-    100% {
-        opacity: 1;
-    }
-}
-
-/* Projects */
-.section-title {
-    font-size: 2.5rem;
+.subsection-title {
+    font-size: 1.75rem;
     margin-bottom: var(--spacing-md);
+    color: var(--primary-color);
 }
 
 .work-grid {
@@ -286,9 +357,8 @@ a {
     border-radius: var(--radius-lg);
     padding: var(--spacing-md);
     display: flex;
-    /* Placeholder for image + text layout */
     align-items: center;
-    min-height: 200px;
+    min-height: 180px;
 }
 
 .project-content h3 {
@@ -321,7 +391,7 @@ a {
     gap: var(--spacing-md);
 }
 
-/* Base Grain Animation (Optional polish) */
+/* Base Grain Animation */
 .background-grain {
     position: fixed;
     top: 0;

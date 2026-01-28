@@ -25,8 +25,9 @@
         <div class="container navbar-content">
             <a href="#" class="logo">Koushik.</a>
             <nav>
-                <a href="#work" class="nav-link">Work</a>
-                <a href="#about" class="nav-link">About</a>
+                <a href="#education" class="nav-link">Education</a>
+                <a href="#coding" class="nav-link">Coding</a>
+                <a href="#projects" class="nav-link">Dev & Skills</a>
                 <a href="#contact" class="btn-small">Contact</a>
             </nav>
         </div>
@@ -47,45 +48,93 @@
                 </p>
 
                 <div class="hero-actions">
-                    <a href="#work" class="btn-primary">See my work</a>
+                    <a href="#projects" class="btn-primary">See my work</a>
                     <a href="https://github.com/dnathkoushik" target="_blank" class="btn-secondary">GitHub</a>
                 </div>
             </div>
         </section>
 
-        <!-- Bento Grid / Info Section -->
-        <section class="info-grid container">
-            <div class="card about-card">
-                <h3>About Me</h3>
-                <p>Focused on Full Stack Development with a passion for clean code and user-centric design.</p>
-                <div class="tags">
-                    <span>React</span>
-                    <span>Node.js</span>
-                    <span>C++</span>
-                    <span>DSA</span>
-                    <span>JavaScript</span>
+        <!-- 1) Education Section -->
+        <section id="education" class="container section-padding">
+            <h2 class="section-title">Education</h2>
+            <div class="card education-detail-card">
+                <div class="edu-header">
+                    <div class="edu-info">
+                        <h3>Indian Institute of Technology, Kharagpur</h3>
+                        <p class="degree">Bachelor of Technology (B.Tech)</p>
+                    </div>
+                    <span class="edu-year">2023 - 2027</span>
                 </div>
-            </div>
-            <div class="card education-card">
-                <h3>Education</h3>
-                <div class="edu-item">
-                    <h4>IIT Kharagpur</h4>
-                    <p>B.Tech</p>
-                    <span class="year">2023 - 2027</span>
-                </div>
-            </div>
-            <div class="card status-card">
-                <h3>Status</h3>
-                <div class="status-indicator">
-                    <span class="dot"></span>
-                    <span>Coding @ IIT KGP</span>
+                <div class="edu-desc">
+                    <p>Major in [Your Department]. Active member of coding clubs and tech societies.</p>
                 </div>
             </div>
         </section>
 
-        <!-- Selected Work -->
-        <section id="work" class="work container section-padding">
-            <h2 class="section-title">Selected Work</h2>
+        <!-- 2) Coding Section -->
+        <section id="coding" class="container section-padding">
+            <h2 class="section-title">Message Passing & Algorithms</h2>
+            <p class="section-subtitle">Competitive programming highlights and problem solving statistics.</p>
+
+            <div class="coding-grid">
+                <!-- LeetCode -->
+                <a href="https://leetcode.com/u/dnathkoushik/" target="_blank" class="card coding-card leetcode-card">
+                    <div class="coding-icon">
+                        <!-- Simple Icon Placeholder or Text -->
+                        <span class="lc-logo">LeetCode</span>
+                    </div>
+                    <div class="coding-stats">
+                        <h3>LeetCode Profile</h3>
+                        <p>View solved problems and contest ratings.</p>
+                        <span class="link-arrow">View Profile &rarr;</span>
+                    </div>
+                </a>
+
+                <!-- Codeforces -->
+                <a href="https://codeforces.com/profile/kdisback" target="_blank"
+                    class="card coding-card codeforces-card">
+                    <div class="coding-icon">
+                        <span class="cf-logo">Codeforces</span>
+                    </div>
+                    <div class="coding-stats">
+                        <h3>Codeforces Profile</h3>
+                        <p>Handle: <strong>kdisback</strong></p>
+                        <span class="link-arrow">View Profile &rarr;</span>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <!-- 3) Skills & Projects Section -->
+        <section id="projects" class="container section-padding">
+            <h2 class="section-title">Development & Skills</h2>
+
+            <!-- Skills Sub-section -->
+            <div class="skills-wrapper">
+                <div class="skill-category">
+                    <h4>Core</h4>
+                    <div class="tags">
+                        <span>C++ (STL)</span>
+                        <span>Data Structures & Algorithims</span>
+                        <span>System Design</span>
+                        <span>OOPs</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h4>Development</h4>
+                    <div class="tags">
+                        <span>React.js</span>
+                        <span>Node.js</span>
+                        <span>Express</span>
+                        <span>MongoDB</span>
+                        <span>Git/GitHub</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="spacer-lg"></div>
+
+            <h3 class="subsection-title">Featured Projects</h3>
             <div class="work-grid">
                 <!-- Project 1 -->
                 <article class="project-card">
@@ -102,7 +151,7 @@
                 <article class="project-card">
                     <div class="project-content">
                         <h3>Ecommerce Backend</h3>
-                        <p>Scalable backend service for e-commerce applications built with JavaScript.</p>
+                        <p>Scalable backend service for e-commerce applications built with JavaScript/Node.js.</p>
                         <div class="project-links">
                             <a href="https://github.com/dnathkoushik/ecommerce-backend" target="_blank">View Code</a>
                         </div>
