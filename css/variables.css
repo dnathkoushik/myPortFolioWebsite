@@ -1,16 +1,22 @@
 :root {
-    /* Color Palette - Premium & Modern */
-    --primary-color: #3b82f6; /* Modern Blue */
-    --secondary-color: #1e3a8a; /* Dark Blue */
-    --accent-color: #f59e0b; /* Amber */
-    --background-color: #0f172a; /* Dark Slate (Dark Mode base) */
-    --surface-color: #1e293b; /* Slightly lighter slate for cards */
-    --text-color: #f8fafc; /* Off-white for readability */
-    --text-secondary: #94a3b8; /* Muted text */
+    /* Color Palette - Premium Dark */
+    --background-color: #0c0c0c;
+    /* Near Black */
+    --surface-color: #161616;
+    /* Dark Gray */
+    --surface-hover: #212121;
+    --primary-color: #e2e2e2;
+    /* Off White for primary text */
+    --secondary-color: #888888;
+    /* Grey for secondary text */
+    --accent-color: #3b82f6;
+    /* Subtle Blue accent, can be changed */
+    --border-color: #333333;
 
     /* Typography */
-    --font-main: 'Inter', sans-serif;
-    --font-heading: 'Outfit', sans-serif;
+    /* Using Bricolage Grotesque for that "Dimpl" vibe */
+    --font-heading: 'Bricolage Grotesque', sans-serif;
+    --font-body: 'Inter', sans-serif;
 
     /* Spacing */
     --spacing-xs: 0.5rem;
@@ -19,7 +25,8 @@
     --spacing-lg: 4rem;
     --spacing-xl: 8rem;
 
-    /* Transitions */
-    --transition-fast: 0.2s ease;
-    --transition-base: 0.3s ease-in-out;
+    /* Layout */
+    --container-width: 1000px;
+    --radius-md: 12px;
+    --radius-lg: 20px;
 }
