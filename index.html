@@ -13,6 +13,9 @@
         href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;600;800&family=Inter:wght@400;500&display=swap"
         rel="stylesheet">
 
+    <!-- RemixIcon -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -28,6 +31,7 @@
                 <a href="#education" class="nav-link">Education</a>
                 <a href="#coding" class="nav-link">Coding</a>
                 <a href="#projects" class="nav-link">Dev & Skills</a>
+                <a href="#blogs" class="nav-link">Blogs</a>
                 <a href="#contact" class="btn-small">Contact</a>
             </nav>
         </div>
@@ -164,6 +168,58 @@
                         <p>Customer Relationship Management system built with JavaScript.</p>
                         <div class="project-links">
                             <a href="https://github.com/dnathkoushik/crmApp" target="_blank">View Code</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- 4) Blogs Section -->
+        <section id="blogs" class="container section-padding">
+            <h2 class="section-title">Thoughts & Articles</h2>
+            <p class="section-subtitle">Insights on Tech, Development, and Life.</p>
+
+            <!-- Blog List View -->
+            <div id="blog-list" class="blog-grid">
+                <!-- Blog cards will be injected by JS -->
+            </div>
+
+            <!-- Blog Detail View (Hidden by default) -->
+            <div id="blog-detail" class="blog-detail hidden">
+                <button id="back-to-blogs" class="btn-secondary" style="margin-bottom: 2rem;">
+                    <i class="ri-arrow-left-line"></i> Back to Blogs
+                </button>
+                <article class="blog-full-content">
+                    <h1 id="detail-title" class="hero-title" style="font-size: 3rem;"></h1>
+                    <div class="blog-meta-large" style="margin-bottom: 2rem; color: var(--secondary-color);">
+                        <span id="detail-date"></span> • <span id="detail-category"
+                            style="color: var(--accent-color);"></span>
+                    </div>
+                    <div id="detail-body" class="typography" style="font-size: 1.1rem; color: var(--primary-color);">
+                    </div>
+
+                    <div class="spacer-lg"></div>
+
+                    <!-- Interactions -->
+                    <div class="blog-interactions">
+                        <button id="detail-like-btn" class="btn-secondary">
+                            <i class="ri-heart-line"></i> <span id="detail-like-count">0</span> Likes
+                        </button>
+                    </div>
+
+                    <div class="spacer-lg"></div>
+
+                    <!-- Comments Section -->
+                    <div class="comments-section">
+                        <h3>Comments</h3>
+                        <div id="comments-list" class="comments-list">
+                            <!-- Comments injected here -->
+                        </div>
+                        <div class="comment-form" style="margin-top: 2rem;">
+                            <textarea id="comment-input" placeholder="Write a comment..." rows="3"
+                                style="width: 100%; padding: 1rem; background: var(--surface-hover); border: 1px solid var(--border-color); border-radius: var(--radius-md); color: white;"></textarea>
+                            <button id="submit-comment" class="btn-primary" style="margin-top: 1rem;">Post
+                                Comment</button>
                         </div>
                     </div>
                 </article>
